@@ -1,0 +1,58 @@
+.app {
+    padding: 2rem 1rem
+}
+
+.hola {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: aqua;
+}
+
+.input {
+    appearance: none;
+    outline: none;
+    border:none;
+    background-color:azure ;
+    width: 100%;
+    max-width: 300px;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    margin-right: 2rem;
+    
+}
+
+.boton {
+    appearance: none;
+    outline: none;
+    border:none;
+    background: none;
+    cursor: pointer;
+
+    color:#2bcb4b;
+    font-size: 1.4rem;
+    line-height: 1;
+    text-decoration: none;
+}
+
+.qr {
+   display: block;
+   width: 100%;
+   max-width: 300px;
+   margin:0 auto;
+   margin-top: 5%; 
+   
+}
+
+.download {
+    appearance: none;
+    outline: none;
+    border:none;
+    background: none;
+    cursor: pointer;
+    margin-left: 41%;
+
+    color:#2bcb4b;
+    font-size: 1.4rem;
+    line-height: 1;
+    text-decoration: none;
+}
