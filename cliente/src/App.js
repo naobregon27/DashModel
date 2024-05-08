@@ -4,7 +4,7 @@ import ImageDetail from "./page/imageDetail";
 import ImageForm from "./page/imageForm";
 import ImageGallery from "./page/imageGallery";
 import Login from "./components/login";
-import Model from "./components/model/modelFinal"
+
 
 
 import "./App.css";
