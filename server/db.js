@@ -6,24 +6,24 @@ const fs = require("fs");
 const path = require("path");
 
 // Configura los parámetros de conexión a tu base de datos PostgreSQL
-const sequelize = new Sequelize(process.env.DB_NAME, process.env.DB_USER, process.env.DB_PASSWORD, {
-  host: process.env.DB_HOST,
-  port: process.env.DB_PORT,
-  dialect: 'postgres',
-  logging: false, // Desactiva los logs de Sequelize (opcional)
-  native: false, // lets Sequelize know we can use pg-native for ~30% more speed
-  ssl: true, 
-});
+// const sequelize = new Sequelize(process.env.DB_NAME, process.env.DB_USER, process.env.DB_PASSWORD, {
+//   host: process.env.DB_HOST,
+//   port: process.env.DB_PORT,
+//   dialect: 'postgres',
+//   logging: false, // Desactiva los logs de Sequelize (opcional)
+//   native: false, // lets Sequelize know we can use pg-native for ~30% more speed
+//   ssl: true, 
+// });
 
 //! este sequelize es para RENDERIZADO... DEPLOY DB en render.s.
 
-// const sequelize = new Sequelize("postgres://nahuel:XVN1SVNYbln0BwZLgo8BcSG5xV1W72xi@dpg-cma2huocmk4c739h7m70-a.oregon-postgres.render.com/calculadora_cotizad", {
-//   logging: false,
-//   native: false,
-//   dialectOptions: {
-//     ssl: true, // Deshabilitar la conexión SSL/TLS
-//   },
-// });
+const sequelize = new Sequelize("postgres://gallery_fixd_user:N8lQwLATfQEyDxhHfv0k2LZGzMHs9cGK@dpg-cote8eq1hbls73a6epc0-a.oregon-postgres.render.com/gallery_fixd", {
+  logging: false,
+  native: false,
+  dialectOptions: {
+    ssl: true, // Deshabilitar la conexión SSL/TLS
+  },
+});
 
 //cargamos los archivos en los modelos dinamicos
 const basename = path.basename(__filename);
