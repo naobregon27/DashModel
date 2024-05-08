@@ -32,7 +32,7 @@ function Form() {
         formData.append("title", title);
 
         try {
-              await axios.post("http://localhost:4000/api/images/upload", formData, {
+              await axios.post("https://dashmodel.onrender.com/api/images/upload", formData, {//deployado
                 headers: {
                     "Content-Type": "multipart/form-data",
                 },

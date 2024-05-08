@@ -25,13 +25,13 @@ const Detail = () => {
         console.error('Invalid id:', params.id);
         return;
       }
-      const res = await axios.get("http://localhost:4000/api/images/" + id);
+      const res = await axios.get("https://dashmodel.onrender.com/api/images/" + id);//deployado
       setImage(res.data);
     })();
   }, [params.id]);
 
   const handleDelete = async () => {
-    await axios.delete("http://localhost:4000/api/images/" + params.id);
+    await axios.delete("https://dashmodel.onrender.com/api/images/" + params.id);//deployado
     navigate('/');
   }
 

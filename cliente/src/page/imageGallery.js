@@ -10,7 +10,7 @@ function Gallery() {
 
     useEffect(() => {
         (async () => {
-            const res = await axios.get("http://localhost:4000/api/images");
+            const res = await axios.get("https://dashmodel.onrender.com/images");//deployado
             console.log(res);
             setImages(res.data);
         })();
