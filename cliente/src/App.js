@@ -19,7 +19,6 @@ function App() {
 
       <div className="container p-4">
         <Routes>
-        <Route path='/model' element={<Model />} />      
           <Route path='/' element={<Login />} />
           <Route path='/gallery' element={<ImageGallery />} />
           <Route path='/upload' element={<ImageForm />} />
