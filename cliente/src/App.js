@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Routes, Route } from "react-router-dom";
 
 import ImageDetail from "./page/imageDetail";
 import ImageForm from "./page/imageForm";

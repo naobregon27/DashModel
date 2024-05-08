@@ -31,7 +31,7 @@ const Detail = () => {
   }, [params.id]);
 
   const handleDelete = async () => {
-    const res = await axios.delete("http://localhost:4000/api/images/" + params.id);
+    await axios.delete("http://localhost:4000/api/images/" + params.id);
     navigate('/');
   }
 

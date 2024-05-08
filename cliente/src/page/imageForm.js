@@ -32,7 +32,7 @@ function Form() {
         formData.append("title", title);
 
         try {
-            const res = await axios.post("http://localhost:4000/api/images/upload", formData, {
+              await axios.post("http://localhost:4000/api/images/upload", formData, {
                 headers: {
                     "Content-Type": "multipart/form-data",
                 },

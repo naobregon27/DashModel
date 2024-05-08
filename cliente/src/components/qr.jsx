@@ -34,7 +34,7 @@ function QRCodeGenerator (){
 			<button onClick={GenerateQRCode} className='boton' class="btn btn-success">Generate</button>
 			<hr />
 			{qr && <>
-				<img className='qr' src={qr} />
+				<img className='qr' src={qr} alt="imagen QR"/>
 				<br />
 				<a href={qr} download="qrcode.png" className='download'class="btn btn-info" >Download</a>
 			</>}
