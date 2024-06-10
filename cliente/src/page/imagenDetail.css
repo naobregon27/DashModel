@@ -5,7 +5,7 @@
     align-items: center;
     z-index: 10;
     top: 15%;
-    left: 50%;
+    left: 85%;
     transform: translate(-50%, -50%);
     background-color: #f9f9f9;
     padding: 20px;
@@ -22,4 +22,25 @@
     padding: 10px 20px;
     border-radius: 4px;
     cursor: pointer;
+}
+
+.diga{
+    color: aliceblue;
+}
+
+.card{
+    width: 150%;
+    position: absolute;
+    left: -20%;
+}
+
+.aloja{
+position: absolute;
+left: 47%;
+}
+
+.cerrar{
+    position: absolute;
+    left: 75%;
+    top: 92%
 }

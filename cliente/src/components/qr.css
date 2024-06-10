@@ -56,3 +56,11 @@
     line-height: 1;
     text-decoration: none;
 }
+
+.url{
+    background-color: rgba(250, 235, 215, 0.586);
+    color: orangered;
+    border-radius: 8px;
+    padding: 10px; 
+    
+}
